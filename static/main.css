@@ -1,0 +1,35 @@
+.content h1{
+    text-align: center;
+}
+
+body{
+    background-image: url(annie-spratt-Ki0-ea-Hgx4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    font-family: 'Roboto Slab', serif;
+}
+
+table, td, th {
+    border: 2px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.details{
+    margin-top: 30px;
+    text-align: center;
+}

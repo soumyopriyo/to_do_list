@@ -1,0 +1,20 @@
+<!-- template inheritance -->
+<!-- template inheritanc is a process where we create a base HTML file which 
+    acts as the skeleton of which each page will look like so  that othe similar pages can 
+    inherit it and make only the necessary changes-->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static',filename='main.css')}}"><!-- the (double braces) is for things that i want to print it just gives the code written in between the braces and return as str-->
+         {% block head %}{% endblock %} <!--thi is jinga2 sintax  this a template edging that flask uses -->
+         <!-- we are creating a block in the template and here in this block we are just going to insert our code on all the other pages that inherit 
+         this template -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        {% block body %}{% endblock %} <!-- here the (% and braces) is for stuff like if,else,for loop,etc-->
+    </body>
+    </html>
